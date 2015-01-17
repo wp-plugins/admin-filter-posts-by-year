@@ -2,7 +2,7 @@
 /*
 Plugin Name: Admin filter posts by year
 Description: In your admin area, this plugin offers the avaibility of filter your posts by <strong>YEARS</strong> and not only by <strong>months of years</strong>.
-Version: 1.0
+Version: 1.1
 Author: Gilles Dumas
 Author URI: http://gillesdumas.com
 */
@@ -81,13 +81,13 @@ function admin_filter_posts_by_years_init($months){
 
 
 /**
- * admin_filter_posts_by_years_admin_head()
+ * gwp_admin_filter_posts_by_years_admin_head()
  * 
  * @desc   : javascript
  * @author : Gilles Dumas | circusmind@gmail.com
  * @since  : 20140501
  */
-function admin_filter_posts_by_years_admin_head() {
+function gwp_admin_filter_posts_by_years_admin_head() {
     if (isset($_GET['m'])) {
         $m = $_GET['m'];
         if (strlen($m) == 4) {
@@ -102,7 +102,7 @@ function admin_filter_posts_by_years_admin_head() {
         }
     }
 }
-add_action('admin_head', 'admin_filter_posts_by_years_admin_head', 10);
+add_action('admin_head', 'gwp_admin_filter_posts_by_years_admin_head', 10);
 
 
 

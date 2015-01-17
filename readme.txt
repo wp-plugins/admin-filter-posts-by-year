@@ -3,8 +3,8 @@ Plugin Name: Admin filter posts by year
 Contributors: gilles66
 Tags: posts, filter, years, year, admin
 Requires at least: 3.8
-Tested up to: 3.9
-Stable tag: 1.0
+Tested up to: 4.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,9 @@ All types of custom post types : post, page, and your custom post types.
 1. The date filter list, with the years.
 
 == Changelog ==
+
+= 1.1 =
+* Compatibility with wp 4.1
 
 = 1.0 =
 * First version
